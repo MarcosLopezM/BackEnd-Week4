@@ -1,5 +1,5 @@
 const Reader = require('./../../lib/utils/Reader');
-const ExplorerService = require('./../../lib/services/ExplorerService');
+const ExplorerService = require('../../lib/services/ExplorerService');
 
 describe("Test para ExplorerService", () => {
     test("1) Amount of explorer in certain mission", () => {
