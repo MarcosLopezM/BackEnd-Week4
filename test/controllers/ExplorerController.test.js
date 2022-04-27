@@ -6,4 +6,10 @@ describe("Test para ExplorerController", () => {
 
         expect(explorerInNode[0].mission).toMatch(/node/);
     });
+
+    test("2) Getting usernames of explorers in certain mission", () => {
+        const explorersUsernameInNode = ExplorerController.getExplorersUsernamesByMission("node");
+
+        expect(explorersUsernameInNode[0]).toMatch(/ajolonauta1/);
+    });
 });
