@@ -12,4 +12,10 @@ describe("Test para ExplorerController", () => {
 
         expect(explorersUsernameInNode[0]).toMatch(/ajolonauta1/);
     });
+
+    test("3) Getting amount of explorer in certain mission", () => {
+        const explorersAmountInNode = ExplorerController.getExplorersAmountByMission("node");
+
+        expect(explorersAmountInNode).toBe(10);
+    });
 });
